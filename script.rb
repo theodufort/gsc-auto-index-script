@@ -11,7 +11,7 @@ require "csv" # optional csv parsing
 # If this is set to true, the script read from a CSV file called "urls.csv"
 # This file should contain URLs that you want to index for your site.
 # If this flag is true, we will SKIP parsing your sitemap and just use the urls.csv values directly.
-INDEX_FROM_CSV = false
+INDEX_FROM_CSV = true
 
 # Preface: functions we use later on #
 def get_all_site_urls(service)
@@ -58,7 +58,7 @@ end
 # - Click "Actions" > "Manage keys" > "Add key" > "Create new key" > "JSON", and move the ".json" file into the same directory as this script
 # - Edit "service_account_file" to match the name of your key — 
 #
-service_account_file = "gsc-index-400005-b3da9e3fd4fc.json"
+service_account_file = "mybookquest-39ca1e699ffd.json"
 #
 # - Invite your service account into your Google Search Console
 # - Search Console > "Settings" > "Users and Permissions" > "Add User" and enter the email of your service account
